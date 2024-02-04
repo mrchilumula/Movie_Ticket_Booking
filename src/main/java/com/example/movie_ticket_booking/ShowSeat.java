@@ -9,9 +9,9 @@ import lombok.Setter;
 @Entity
 public class ShowSeat extends BaseModel{
     @ManyToOne
-    private Show show;
+    private Shows show;
     @ManyToOne
-    private Seat seat;
+    private Seats seat;
     @Enumerated(EnumType.ORDINAL)
     private ShowSeatStatus seatStatus;
     private String seatType;

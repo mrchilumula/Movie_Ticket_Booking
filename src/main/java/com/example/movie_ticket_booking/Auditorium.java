@@ -16,7 +16,7 @@ public class Auditorium extends BaseModel{
     private int totalRows;
     private int totalColumns;
     @OneToMany
-    private List<Seat> seats;
+    private List<Seats> seats;
     @Enumerated(EnumType.STRING)
     @ElementCollection
     private List<Feature> features;

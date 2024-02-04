@@ -14,13 +14,13 @@ public class Ticket extends     BaseModel {
     private Date timeOfBooking;
 
     @ManyToMany
-    private List<Seat> seats;
+    private List<Seats> seats;
 
     @ManyToOne
     private User bookedBy;
 
     @ManyToOne
-    private Show show;
+    private Shows show;
 
     @OneToMany(mappedBy = "ticket")
     private List<Payment> payments;
