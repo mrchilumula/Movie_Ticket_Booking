@@ -56,8 +56,8 @@ public Booking bookMovie(Long userId, Long showId, List<Long> showSeatIds) {
     }
     ArrayList<ShowSeat> BookedSeats = new ArrayList<>();
     for (ShowSeat seat : seats) {
-        seat.setShowSeatStatus(ShowSeatStatus.BOOKED);
 
+seat.setShowSeatStatus(ShowSeatStatus.BOOKED);
         BookedSeats.add(showSeatRepo.save(seat));
 
     }

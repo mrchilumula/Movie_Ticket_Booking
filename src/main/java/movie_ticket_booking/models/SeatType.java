@@ -13,4 +13,8 @@ public class SeatType extends  BaseModel{
     private Shows show;
     private String seatTypeName;
     private int price;
+
+    public Seats getSeatType() {
+        return null;
+    }
 }
