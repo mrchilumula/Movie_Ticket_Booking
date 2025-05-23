@@ -21,3 +21,33 @@ A backend application for booking movie tickets online, developed using **Spring
 
 ## 📁 Project Structure
 
+movie-ticket-booking/
+│
+├── controller/ # API endpoints
+├── service/ # Business logic layer
+├── model/ # Entity classes
+├── repository/ # Data access layer
+├── config/ # Security configuration
+└── dto/ # Request/response models
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/mrchilumula/Movie_Ticket_Booking.git
+cd Movie_Ticket_Booking
+
+Create a MySQL database movie_booking_db
+
+Update src/main/resources/application.properties with your DB credentials
+
+ Test API Endpoints
+Use Postman to test APIs like:
+
+POST /api/auth/register
+
+POST /api/auth/login
+
+GET /api/movies
+
+POST /api/book
+
+GET /api/bookings
